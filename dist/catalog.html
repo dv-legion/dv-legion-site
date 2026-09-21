@@ -84,7 +84,13 @@
     </div>
   </div>
 
-  <div class="catalog-actions-bar"><button id="cart-open" class="cart-open" type="button">B2B-заявка <span id="cart-count">0</span></button><p>Онлайн-оплата алкогольной продукции на сайте не производится. Заявка направляется менеджеру для согласования поставки.</p></div>
+  <div class="catalog-actions-bar">
+  <div class="catalog-cart-buttons">
+    <button id="shop-open" class="shop-open" type="button">Корзина покупок <span id="shop-count">0</span></button>
+    <button id="cart-open" class="cart-open" type="button">B2B-заявка <span id="cart-count">0</span></button>
+  </div>
+  <p>Онлайн-покупка доступна только для безалкогольной продукции и разрешённых товаров. Алкоголь оформляется только через B2B-заявку.</p>
+</div>
   <div class="catalog-result-row">
     <p id="catalog-count" role="status" aria-live="polite">Загружаем ассортимент…</p>
     <p>Для деловых партнёров · без розничной продажи на сайте</p>
@@ -103,6 +109,12 @@
   <div><p>Расскажите, что требуется вашему магазину, ресторану или компании. Мы обсудим ассортимент и условия работы.</p><a class="button button-primary" href="index.html#partnership">Стать партнёром <span>↗</span></a></div>
 </section>
 </main>
+<aside id="shop-drawer" class="cart-drawer shop-drawer" hidden aria-label="Корзина покупок">
+  <div class="cart-head"><div><small>ОНЛАЙН-ПОКУПКА</small><h2>Корзина</h2></div><button id="shop-close" type="button" aria-label="Закрыть">×</button></div>
+  <div class="shop-items cart-items"></div>
+  <div class="cart-note">В эту корзину можно добавлять только безалкогольную продукцию и другие разрешённые товары. Цены и реальная оплата будут подключены на следующем этапе.</div>
+  <button id="shop-checkout" class="gold-button" type="button">Оформить заказ <span>→</span></button>
+</aside>
 <aside id="cart-drawer" class="cart-drawer" hidden aria-label="B2B-заявка">
   <div class="cart-head"><div><small>КОРЗИНА ЗАЯВКИ</small><h2>Запросить условия</h2></div><button id="cart-close" type="button" aria-label="Закрыть">×</button></div>
   <div class="cart-items"></div>
