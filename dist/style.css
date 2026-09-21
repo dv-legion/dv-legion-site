@@ -320,3 +320,10 @@ linear-gradient(135deg,var(--navy),var(--deep));color:#fff;min-height:720px}
 .site-footer .logo{color:var(--ink)}
 .site-footer a:hover{color:#2f7f37}
 .copyright{border-top-color:#cfd4d2}
+
+/* hero panel without decorative DV letters */
+.hero-brand-panel{justify-content:flex-end!important}
+.hero-brand-mark{display:none!important}
+.hero-brand-copy{margin-bottom:54px}
+@media(max-width:900px){.hero-brand-copy{margin-bottom:42px}}
+@media(max-width:620px){.hero-brand-copy{margin-bottom:36px}}
