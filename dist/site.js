@@ -1,5 +1,7 @@
 'use strict';
 
+document.documentElement.classList.add('js');
+
 const menuButton=document.querySelector('.menu-toggle');
 const mainNav=document.querySelector('#main-nav');
 
@@ -53,4 +55,24 @@ if(partnerForm){
     if(status) status.textContent='Открываем готовое письмо на info@dv-legion.ru…';
     window.location.href='mailto:info@dv-legion.ru?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
   });
+}
+
+const revealItems=[...document.querySelectorAll('.reveal')];
+if(revealItems.length){
+  if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    const observer=new IntersectionObserver(entries=>{
+      for(const entry of entries){
+        if(entry.isIntersecting){
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      }
+    },{threshold:.08,rootMargin:'0px 0px -5% 0px'});
+    revealItems.forEach((item,index)=>{
+      item.style.transitionDelay=Math.min(index%4,3)*70+'ms';
+      observer.observe(item);
+    });
+  }else{
+    revealItems.forEach(item=>item.classList.add('is-visible'));
+  }
 }
