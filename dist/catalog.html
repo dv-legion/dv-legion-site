@@ -11,22 +11,22 @@
 <script src="site.js" defer></script>
 <script src="catalog.js" defer></script>
 </head>
-<body>
+<body class="lux-page catalog-page">
 <a class="skip" href="#main">К содержимому</a>
-<header class="site-header">
-  <a class="logo logo-image-link" href="index.html" aria-label="ДВ Легион — главная"><img class="brand-logo" src="logo-dv-legion.svg" alt="ДВ Легион"></a>
+<header class="lux-header">
+  <a class="lux-brand" href="index.html" aria-label="ДВ Легион"><img src="logo-dv-legion.svg" alt="ДВ Легион"></a>
   <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Меню</button>
-  <nav id="main-nav" class="main-nav" aria-label="Основная навигация">
-    <a href="index.html#company">О компании</a>
-    <a href="catalog.html" aria-current="page">Ассортимент</a>
-    <a href="index.html#partnership">Партнёрам</a>
-    <a href="index.html#contacts">Контакты</a>
+  <nav id="main-nav" class="lux-nav">
+    <a aria-current="page" href="catalog.html">Каталог</a>
+    <a href="about.html">О компании</a>
+    <a href="partners.html">Партнёрам</a>
+    <a href="partners.html#contacts">Контакты</a>
   </nav>
-  <a class="header-phone" href="tel:+74242777245">+7 (4242) 777-245</a>
+  <a class="lux-contact" href="partners.html#request">Связаться <span>→</span></a>
 </header>
 
 <main id="main">
-<section class="catalog-hero">
+<section class="catalog-hero lux-catalog-hero">
   <p class="eyebrow">B2B / КАТАЛОГ</p>
   <div class="catalog-hero-grid">
     <h1>Ассортимент<br><em>для вашего бизнеса.</em></h1>
@@ -103,11 +103,10 @@
 </section>
 </main>
 
-<footer class="site-footer">
-  <a class="logo logo-image-link" href="index.html"><img class="brand-logo footer-brand-logo" src="logo-dv-legion.svg" alt="ДВ Легион"></a>
-  <p>ООО «ДВ Легион»<br>Оптовая дистрибуция алкогольной продукции</p>
-  <div><a href="index.html#company">О компании</a><a href="index.html#partnership">Партнёрам</a><a href="index.html#contacts">Контакты</a></div>
-  <span class="copyright">© 2026 ДВ Легион · ИНН 6501271210 · Для деловых партнёров</span>
+<footer class="lux-footer">
+  <div><strong>DV LEGION</strong><small>Алкогольная дистрибуция · Сахалин</small></div>
+  <nav><a href="catalog.html">Каталог</a><a href="about.html">О компании</a><a href="partners.html">Партнёрам</a><a href="partners.html#contacts">Контакты</a></nav>
+  <p>© 2026 ООО «ДВ Легион» · ИНН 6501271210 · B2B</p>
 </footer>
 </body>
 </html>
