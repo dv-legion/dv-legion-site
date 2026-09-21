@@ -35,10 +35,14 @@ function openCart(){
    const txt=document.createElement('div');txt.innerHTML='<strong></strong><small></small>';txt.querySelector('strong').textContent=item.name;txt.querySelector('small').textContent='Код '+item.code;
    const controls=document.createElement('div');controls.className='cart-qty';
    const minus=document.createElement('button');minus.type='button';minus.textContent='−';
-   const qty=document.createElement('span');qty.textContent=item.qty||1;
+   const qty=document.createElement('input');qty.type='number';qty.min='1';qty.step='1';qty.inputMode='numeric';qty.value=String(item.qty||1);qty.className='cart-qty-input';qty.setAttribute('aria-label','Количество: '+item.name);
    const plus=document.createElement('button');plus.type='button';plus.textContent='+';
    minus.onclick=()=>{const c=getCart();const x=c.find(z=>z.code===item.code);if(x){x.qty--;if(x.qty<=0)c.splice(c.indexOf(x),1)}setCart(c);openCart()};
    plus.onclick=()=>{const c=getCart();const x=c.find(z=>z.code===item.code);if(x)x.qty++;setCart(c);openCart()};
+   const saveTypedQty=()=>{const value=Math.max(1,Math.floor(Number(qty.value)||1));const c=getCart();const x=c.find(z=>z.code===item.code);if(x)x.qty=value;setCart(c);qty.value=String(value)};
+   qty.addEventListener('change',saveTypedQty);
+   qty.addEventListener('blur',saveTypedQty);
+   qty.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();saveTypedQty();qty.blur()}});
    controls.append(minus,qty,plus); row.append(txt,controls);list.append(row);
  }
  drawer.hidden=false; document.body.classList.add('cart-open');
