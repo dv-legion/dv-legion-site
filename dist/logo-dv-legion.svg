@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" role="img" aria-labelledby="title desc">
-<title id="title">ДВ Легион</title>
-<desc id="desc">Фирменный знак ДВ Легион: крупные буквы ДВ, зелёная дуга и слово ЛЕГИОН.</desc>
-<g fill="#111111">
-  <text x="34" y="132" font-family="Arial Black,Arial,sans-serif" font-size="126" font-weight="900" letter-spacing="-12">ДВ</text>
-  <text x="295" y="130" font-family="Arial,Helvetica,sans-serif" font-size="64" font-weight="800" letter-spacing="7">ЛЕГИОН</text>
-</g>
-<path d="M28 162 C150 18, 353 6, 535 72 C603 97, 659 124, 724 161" fill="none" stroke="#38b24a" stroke-width="17" stroke-linecap="round"/>
-<path d="M28 162 C150 18, 353 6, 535 72 C603 97, 659 124, 724 161" fill="none" stroke="#7bd66f" stroke-width="5" stroke-linecap="round" opacity=".9"/>
-<text x="297" y="177" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" letter-spacing="5" fill="#2f7f37">ДИСТРИБУЦИЯ · САХАЛИН</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 190" role="img" aria-label="ДВ Легион"><g fill="#E5BD79"><text x="25" y="112" font-family="Georgia,serif" font-size="108" font-weight="700" letter-spacing="-8">ДВ</text><text x="275" y="105" font-family="Georgia,serif" font-size="57" font-weight="700" letter-spacing="6">ЛЕГИОН</text></g><path d="M27 140 C150 15,350 8,535 66 C605 88,663 116,725 143" fill="none" stroke="#4E9A56" stroke-width="12" stroke-linecap="round"/><text x="278" y="154" font-family="Arial,sans-serif" font-size="15" font-weight="600" letter-spacing="4" fill="#CDA76D">ДИСТРИБУЦИЯ · САХАЛИН</text></svg>
