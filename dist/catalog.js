@@ -25,7 +25,14 @@ function render() {
   const title = document.createElement('h2');title.textContent=item.name;
   const code = document.createElement('p');code.className='product-code';code.textContent='Код: '+item.code;
   const link = document.createElement('a');link.href='mailto:info@dv-legion.ru?subject='+encodeURIComponent('Запрос по ассортименту: '+item.code)+'&body='+encodeURIComponent('Здравствуйте!\nПрошу уточнить наличие, оптовую цену и условия поставки:\n'+item.name+'\nКод: '+item.code+'\n\nОрганизация:\nКоличество:\nТелефон:');link.textContent='Уточнить условия ↗';
-  card.append(tag,title,code,link);products.append(card);
+  const media = document.createElement('div');media.className='product-media';
+  const missing = () => { media.replaceChildren();const text=document.createElement('span');text.className='product-photo-missing';text.textContent='Фото пока нет';media.append(text); };
+  if (item.image) {
+   const photo=document.createElement('img');photo.src=item.image;photo.alt=item.name;photo.loading='lazy';photo.decoding='async';photo.width=240;photo.height=260;
+   photo.addEventListener('error',missing,{once:true});media.append(photo);
+   if (item.imageSource) { const source=document.createElement('a');source.className='photo-source';source.href=item.imageSource;source.target='_blank';source.rel='noopener noreferrer';source.textContent='Источник фото';source.setAttribute('aria-label','Источник фотографии: '+item.name);media.append(source); }
+  } else { missing(); }
+  card.append(media,tag,title,code,link);products.append(card);
  }
  status.textContent = filtered.length ? `Страница ${page} из ${pages}` : 'Нет результатов';
  prev.disabled = page<=1;next.disabled=page>=pages;

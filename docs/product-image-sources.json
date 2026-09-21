@@ -1,0 +1,623 @@
+[
+  {
+    "code": "0268",
+    "name": "Коньяк марочный выдержанный \"КВ\" 7 лет \"ЦАРД\" 0,5л 40%",
+    "source_page": "https://lux31.ru/catalog-cognac/tproduct/614370464-953985659181-tsard-7-let-05l",
+    "image_url": "https://static.tildacdn.com/tild3765-6435-4337-a530-366466336336/C-00154.jpg",
+    "match_note": "Brand and variant visually inspected; exact volume/strength and packaging corroborated by product listing.",
+    "rights_note": "Public retailer product image; no explicit reuse license located.",
+    "catalog_name": "Коньяк марочный выдержанный \"КВ\" 7 лет \"ЦАРД\" 0,5л 40%",
+    "published_image": "embedded:0268"
+  },
+  {
+    "code": "0306",
+    "name": "Коньяк ординарный пятилетний \"Саят Нова пять звезд\" 0,5л 40%",
+    "source_page": "https://probkibutylki.ru/shop/konjak/armenija/konjak-sajat-nova-5-let-250-ml.html",
+    "image_url": "https://probkibutylki.ru/1117735-medium_image1728993699/konjak-sajat-nova-5-let-250-ml.jpg",
+    "match_note": "Source page title says 250ml but actual bottle label visibly reads Объем 0,5 л, Алк.40%, 5 лет; mapped only to 500ml SKU, not 250ml. Packaging-era variance possible.",
+    "rights_note": "Public retailer product image; no explicit reuse license located.",
+    "catalog_name": "Коньяк ординарный пятилетний \"Саят Нова пять звезд\" 0,5л 40%",
+    "published_image": "embedded:0306"
+  },
+  {
+    "code": "3117",
+    "name": "Коньяк армянский ординарный пятилетний \"ИДЖЕВАН\" \"Слон\" 0,5л 40% сувенирная упаковка",
+    "source_page": "https://www.cru.ru/cognac/armenia/ijevan-5-years-gift-box-elephant-2016-05/",
+    "image_url": "https://www.cru.ru/upload/resize_cache/ram.watermark/f59/000/7eb/1101621/662_992_1/ijevan_5_years_gift_box_elephant_2016_0_5.webp",
+    "match_note": "Brand and variant visually inspected; exact volume/strength and packaging corroborated by product listing.",
+    "rights_note": "Public retailer product image; no explicit reuse license located.",
+    "catalog_name": "Коньяк армянский ординарный пятилетний \"ИДЖЕВАН\" \"Слон\" 0,5л 40% сувенирная упаковка",
+    "published_image": "embedded:3117"
+  },
+  {
+    "code": "0456",
+    "name": "Настойка горькая замутненная «ДЫМОВАРКА» 0,5л 40%",
+    "source_page": "https://nlvz42.ru/nastoyka#rec770465465",
+    "image_url": "https://static.tildacdn.com/tild6462-3732-4430-b933-366434643138/photo.jpg",
+    "match_note": "Exact brand, variant, volume and strength matched to manufacturer page and visually inspected packshot.",
+    "rights_note": "Public manufacturer product image; no explicit reuse license located.",
+    "catalog_name": "Настойка горькая замутненная «ДЫМОВАРКА» 0,5л 40%",
+    "published_image": "embedded:0456"
+  },
+  {
+    "code": "4010",
+    "name": "Настойка горькая «ХОЗЯИН ТАЙГИ МЁД И ПЕРЕЦ» 0,5л 35%",
+    "source_page": "https://nlvz42.ru/nastoyka#rec802661937",
+    "image_url": "https://static.tildacdn.com/tild3539-3661-4231-b239-313962306562/___.jpg",
+    "match_note": "Exact brand, variant, volume and strength matched to manufacturer page and visually inspected packshot.",
+    "rights_note": "Public manufacturer product image; no explicit reuse license located.",
+    "catalog_name": "Настойка горькая «ХОЗЯИН ТАЙГИ МЁД И ПЕРЕЦ» 0,5л 35%",
+    "published_image": "embedded:4010"
+  },
+  {
+    "code": "0492",
+    "name": "Настойка сладкая «ХОЗЯИН ТАЙГИ РЯБИНА НА КОНЬЯКЕ» 0,5л 19%",
+    "source_page": "https://nlvz42.ru/nastoyka#rec802661938",
+    "image_url": "https://static.tildacdn.com/tild3835-3037-4930-a265-646264653937/_.jpg",
+    "match_note": "Exact brand, variant, volume and strength matched to manufacturer page and visually inspected packshot.",
+    "rights_note": "Public manufacturer product image; no explicit reuse license located.",
+    "catalog_name": "Настойка сладкая «ХОЗЯИН ТАЙГИ РЯБИНА НА КОНЬЯКЕ» 0,5л 19%",
+    "published_image": "embedded:0492"
+  },
+  {
+    "code": "0493",
+    "name": "Настойка сладкая «ХОЗЯИН ТАЙГИ ЧЁРНАЯ СМОРОДИНА НА КОНЬЯКЕ» 0,5л 19%",
+    "source_page": "https://nlvz42.ru/nastoyka#rec802661940",
+    "image_url": "https://static.tildacdn.com/tild3561-3364-4230-a633-383338303932/_.jpg",
+    "match_note": "Exact brand, variant, volume and strength matched to manufacturer page and visually inspected packshot.",
+    "rights_note": "Public manufacturer product image; no explicit reuse license located.",
+    "catalog_name": "Настойка сладкая «ХОЗЯИН ТАЙГИ ЧЁРНАЯ СМОРОДИНА НА КОНЬЯКЕ» 0,5л 19%",
+    "published_image": "embedded:0493"
+  },
+  {
+    "code": "0495",
+    "name": "Настойка сладкая «ХОЗЯИН ТАЙГИ ЧЕРНОСЛИВ» 0,5л 19%",
+    "source_page": "https://nlvz42.ru/nastoyka#rec802661942",
+    "image_url": "https://static.tildacdn.com/tild3538-6230-4939-a537-306365303264/_.jpg",
+    "match_note": "Exact brand, variant, volume and strength matched to manufacturer page and visually inspected packshot.",
+    "rights_note": "Public manufacturer product image; no explicit reuse license located.",
+    "catalog_name": "Настойка сладкая «ХОЗЯИН ТАЙГИ ЧЕРНОСЛИВ» 0,5л 19%",
+    "published_image": "embedded:0495"
+  },
+  {
+    "code": "3052",
+    "name": "Коньяк грузинский ординарный пятилетний \"АСКАНЕЛИ\" 0,5л 40%",
+    "source_page": "https://newxo.kz/product/askaneli-5-yo-05l",
+    "image_url": "https://static.insales-cdn.com/r/CkyF-LpH8Hg/rs%3Afit%3A1000%3A0%3A1/q%3A100/plain/images/products/1/825/2849268537/mokst97s6188brwyq6711tn60l67109h.jpg%40jpg",
+    "match_note": "Visually inspected exact Askaneli age, 500ml and 40% bottle label; corroborated by exact product listing.",
+    "rights_note": "Public retailer product image; no explicit reuse license located.",
+    "catalog_name": "Коньяк грузинский ординарный пятилетний \"АСКАНЕЛИ\" 0,5л 40%",
+    "published_image": "embedded:3052"
+  },
+  {
+    "code": "3053",
+    "name": "Коньяк грузинский ординарный трехлетний \"АСКАНЕЛИ\" 0,5л 40%",
+    "source_page": "https://bestwine24.ru/gruzinskiy-konyak-askaneli-3-goda-bratya-askaneli-askaneli-georgian-brandy-3-yo-askaneli-brothers-05-and/",
+    "image_url": "https://bestwine24.ru/storage/optimized/product/koniak/48865d9185bbacd155ff4b189dc7b422_67fd0e1bc2fb2_600x800.webp",
+    "match_note": "Visually inspected exact Askaneli age, 500ml and 40% bottle label; corroborated by exact product listing.",
+    "rights_note": "Public retailer product image; no explicit reuse license located.",
+    "catalog_name": "Коньяк грузинский ординарный трехлетний \"АСКАНЕЛИ\" 0,5л 40%",
+    "published_image": "embedded:3053"
+  },
+  {
+    "code": "00026",
+    "name": "Безалкогольное вино \"КЛАУС ЛАНГХОФФ\" белое сладкое 0,75л",
+    "source_page": "https://decanter.ru/product/klaus-langhoff-whitewine-id258366",
+    "image_url": "https://decanter.ru/image/430280-bezalkogol-noe-vino-klaus-langhoff-whitewine-0-75-l-sq.jpg",
+    "match_note": "Проверено визуально: Klaus Langhoff Alcoholfree white wine, бутылка. Каталог подтверждает белое сладкое 0,75 л. Совпадают бренд, вариант и объем.",
+    "rights_note": "Фотография из публичного розничного каталога Decanter. Открытая лицензия или разрешение на повторную публикацию не подтверждены.",
+    "catalog_name": "Безалкогольное вино \"КЛАУС ЛАНГХОФФ\" белое сладкое 0,75л",
+    "published_image": "embedded:00026"
+  },
+  {
+    "code": "00027",
+    "name": "Безалкогольное вино \"КЛАУС ЛАНГХОФФ\" красное сладкое 0,75л",
+    "source_page": "https://decanter.ru/product/klaus-langhoff-redwine-id258367",
+    "image_url": "https://static.decanter.ru/upload/images/430281/430281-bezalkogol-noe-vino-klaus-langhoff-redwine-0-75-l-f.jpg",
+    "match_note": "Проверено визуально: Klaus Langhoff Alcoholfree red wine, бутылка. Каталог подтверждает красное сладкое 0,75 л. Совпадают бренд, вариант и объем.",
+    "rights_note": "Фотография из публичного розничного каталога Decanter. Открытая лицензия или разрешение на повторную публикацию не подтверждены.",
+    "catalog_name": "Безалкогольное вино \"КЛАУС ЛАНГХОФФ\" красное сладкое 0,75л",
+    "published_image": "embedded:00027"
+  },
+  {
+    "code": "8663",
+    "name": "Плодовая алкогольная продукция \"ВЕДИ АЛКО\" ЕЖЕВИКА красная полусладкая 0,75л 12%",
+    "source_page": "https://vedi-alco.am/ru/wine",
+    "image_url": "https://vedi-alco.am/uploads/2020/03/web-1-1.jpg",
+    "match_note": "Manufacturer catalog: exact fruit, brand, 750 ml standard bottle; label visually inspected. ABV 12% or official 10–12% range.",
+    "rights_note": "Manufacturer product image. Website states all rights reserved; redistribution permission not established.",
+    "catalog_name": "Плодовая алкогольная продукция \"ВЕДИ АЛКО\" ЕЖЕВИКА красная полусладкая 0,75л 12%",
+    "published_image": "embedded:8663"
+  },
+  {
+    "code": "8664",
+    "name": "Алкогольная продукция плодовая красная полусладкая \"ВЕДИ АЛКО\" ВИШНЯ  0,75л 12%",
+    "source_page": "https://vedi-alco.am/ru/wine",
+    "image_url": "https://vedi-alco.am/uploads/2020/03/bal-1-1.jpg",
+    "match_note": "Manufacturer catalog: exact fruit, brand, 750 ml standard bottle; label visually inspected. ABV 12% or official 10–12% range.",
+    "rights_note": "Manufacturer product image. Website states all rights reserved; redistribution permission not established.",
+    "catalog_name": "Алкогольная продукция плодовая красная полусладкая \"ВЕДИ АЛКО\" ВИШНЯ  0,75л 12%",
+    "published_image": "embedded:8664"
+  },
+  {
+    "code": "8665",
+    "name": "Плодовая алкогольная продукция \"ВЕДИ АЛКО\" АБРИКОС белая полусладкая 0,75л 12%",
+    "source_page": "https://vedi-alco.am/ru/wine",
+    "image_url": "https://vedi-alco.am/uploads/2020/03/tsiran-1-1.jpg",
+    "match_note": "Manufacturer catalog: exact fruit, brand, 750 ml standard bottle; label visually inspected. ABV 12% or official 10–12% range.",
+    "rights_note": "Manufacturer product image. Website states all rights reserved; redistribution permission not established.",
+    "catalog_name": "Плодовая алкогольная продукция \"ВЕДИ АЛКО\" АБРИКОС белая полусладкая 0,75л 12%",
+    "published_image": "embedded:8665"
+  },
+  {
+    "code": "8667",
+    "name": "Плодовая алкогольная продукция \"ВЕДИ АЛКО\" МАЛИНА красная полусладкая 0,75л 12%",
+    "source_page": "https://vedi-alco.am/ru/wine",
+    "image_url": "https://vedi-alco.am/uploads/2020/03/mori-1-1.jpg",
+    "match_note": "Manufacturer catalog: exact fruit, brand, 750 ml standard bottle; label visually inspected. ABV 12% or official 10–12% range.",
+    "rights_note": "Manufacturer product image. Website states all rights reserved; redistribution permission not established.",
+    "catalog_name": "Плодовая алкогольная продукция \"ВЕДИ АЛКО\" МАЛИНА красная полусладкая 0,75л 12%",
+    "published_image": "embedded:8667"
+  },
+  {
+    "code": "8756",
+    "name": "Алкогольная продукция плодовая красная полусладкая \"ВЕДИ АЛКО\" ГРАНАТ 0,75л 12%",
+    "source_page": "https://vedi-alco.am/ru/wine",
+    "image_url": "https://vedi-alco.am/uploads/2020/03/nran-kisaqaxr-1-1.jpg",
+    "match_note": "Manufacturer catalog: exact fruit, brand, 750 ml standard bottle; label visually inspected. ABV 12% or official 10–12% range.",
+    "rights_note": "Manufacturer product image. Website states all rights reserved; redistribution permission not established.",
+    "catalog_name": "Алкогольная продукция плодовая красная полусладкая \"ВЕДИ АЛКО\" ГРАНАТ 0,75л 12%",
+    "published_image": "embedded:8756"
+  },
+  {
+    "code": "8758",
+    "name": "Алкогольная продукция плодовая красная полусладкая \"ВЕДИ АЛКО\" МАЛИНА 0,75л 12%",
+    "source_page": "https://vedi-alco.am/ru/wine",
+    "image_url": "https://vedi-alco.am/uploads/2020/03/mori-1-1.jpg",
+    "match_note": "Manufacturer catalog: exact fruit, brand, 750 ml standard bottle; label visually inspected. ABV 12% or official 10–12% range.",
+    "rights_note": "Manufacturer product image. Website states all rights reserved; redistribution permission not established.",
+    "catalog_name": "Алкогольная продукция плодовая красная полусладкая \"ВЕДИ АЛКО\" МАЛИНА 0,75л 12%",
+    "published_image": "embedded:8758"
+  },
+  {
+    "code": "8695",
+    "name": "Вино игристое брют белое \"Эндемы Совиньон\" 0,75л 10,5%",
+    "source_page": "https://www.coolclever.ru/catalog/product/vino-igristoe-rossiyskoe-endemy-sovinon-105-125-075-90025257",
+    "image_url": "https://s3.coolclever.tech/img/0000000090025257/960/29560.webp",
+    "match_note": "Exact brand, Sauvignon white brut 0.75L; source specifies 10.5% and 10.5–12.5 range. Visually inspected. Green background.",
+    "rights_note": "Retailer product photograph; no reuse license established.",
+    "catalog_name": "Вино игристое брют белое \"Эндемы Совиньон\" 0,75л 10,5%",
+    "published_image": "embedded:8695"
+  },
+  {
+    "code": "8243",
+    "name": "Плодовая алкогольная продукция полусладкая \"АРАМЭ МАЛИНА\" 0,75л 11,5%",
+    "source_page": "https://www.cru.ru/wine/armenia/raspberry/",
+    "image_url": "https://www.cru.ru/upload/resize_cache/ram.watermark/885/f88/643/1328010/400_600_1/plodovaya_alkogol_produktsiya_arame_malina_11_5_0_75l_rozovoe_polusladkoe_map_armeniya_0_75.webp",
+    "match_note": "Exact ARAME raspberry semisweet 750 ml 11.5%; visually inspected; retailer watermark retained.",
+    "rights_note": "Retailer product photograph; no reuse license established.",
+    "catalog_name": "Плодовая алкогольная продукция полусладкая \"АРАМЭ МАЛИНА\" 0,75л 11,5%",
+    "published_image": "embedded:8243"
+  },
+  {
+    "code": "333",
+    "name": "Виски шотландский купажированный \"ДЖОННИ УОКЕР РЭД ЛЕЙБЛ\" 0,5л 40%",
+    "source_page": "https://bevasarlas.tesco.hu/groceries/en-HU/products/2004121221188",
+    "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/f26ef8b3-c739-4801-8fc9-89d086ad70a3/51997c29-9ba2-4ff1-98b7-ca1c37c8d276_1420099678.jpeg?h=960&w=960",
+    "match_note": "Exact brand, variant, volume and ABV matched to product listing and packshot; local visual QA pending.",
+    "rights_note": "Public retailer catalog photograph. Reuse license not verified; public availability does not establish permission.",
+    "verified_remote": true,
+    "catalog_name": "Виски шотландский купажированный \"ДЖОННИ УОКЕР РЭД ЛЕЙБЛ\" 0,5л 40%",
+    "published_image": "embedded:333"
+  },
+  {
+    "code": "340",
+    "name": "Виски зерновой (Бурбон) \"ДЖИМ БИМ\" 0,75л 40%",
+    "source_page": "https://spliquor.ca/products/jim-beam-white-label-bourbon-750-ml",
+    "image_url": "https://spliquor.ca/cdn/shop/files/JimBeamWhiteLabelBourbon750mL.jpg?v=1771734239",
+    "match_note": "Exact brand, variant, volume and ABV matched to product listing and packshot; local visual QA pending.",
+    "rights_note": "Public retailer catalog photograph. Reuse license not verified; public availability does not establish permission.",
+    "verified_remote": true,
+    "catalog_name": "Виски зерновой (Бурбон) \"ДЖИМ БИМ\" 0,75л 40%",
+    "published_image": "embedded:340"
+  },
+  {
+    "code": "346",
+    "name": "Спиртной напиток прочий - Спиртной напиток \"ДЖЕК ДЭНИЕЛ`С ТЕННЕССИ ХАНИ ЛИКЕР\" 0,7л 35%",
+    "source_page": "https://www.mygourmet24.de/Jack-Daniels-Tennessee-Honey-Whiskey-35-Vol-07-Liter",
+    "image_url": "https://www.mygourmet24.de/media/image/product/1055/md/jack-daniels-tennessee-honey-whiskey-35-vol-07-liter.png",
+    "match_note": "Exact brand, variant, volume and ABV matched to product listing and packshot; local visual QA pending.",
+    "rights_note": "Public retailer catalog photograph. Reuse license not verified; public availability does not establish permission.",
+    "verified_remote": true,
+    "catalog_name": "Спиртной напиток прочий - Спиртной напиток \"ДЖЕК ДЭНИЕЛ`С ТЕННЕССИ ХАНИ ЛИКЕР\" 0,7л 35%",
+    "published_image": "embedded:346"
+  },
+  {
+    "code": "371",
+    "name": "Виски зерновой \"ДЖЕК ДЭНИЕЛ`С ТЕННЕССИ ВИСКИ\" 0,05л 40%",
+    "source_page": "https://www.walmart.com/ip/108607663",
+    "image_url": "https://i5.walmartimages.com/seo/Jack-Daniel-s-Old-No-7-Tennessee-Whiskey-50-ml-Bottle-40-ABV_591df5ae-5af7-4d2b-ac45-e5b213661f5a.f9f3e12a57d25a894f50c5cdbe03facf.jpeg",
+    "match_note": "Exact brand, variant, volume and ABV matched to product listing and packshot; local visual QA pending.",
+    "rights_note": "Public retailer catalog photograph. Reuse license not verified; public availability does not establish permission.",
+    "verified_remote": true,
+    "catalog_name": "Виски зерновой \"ДЖЕК ДЭНИЕЛ`С ТЕННЕССИ ВИСКИ\" 0,05л 40%",
+    "published_image": "embedded:371"
+  },
+  {
+    "code": "384",
+    "name": "Виски зерновой \"ДЖЕК ДЭНИЕЛ`С ТЕННЕССИ ВИСКИ\" 0,7л 40%",
+    "source_page": "https://mountwinebarrel.co.nz/products/copy-of-jack-daniels-black-label-tennesee-whiskey-700ml-1",
+    "image_url": "https://mountwinebarrel.co.nz/cdn/shop/products/JackDanielsTennesseWhiskey700_640x.jpg?v=1601245419",
+    "match_note": "Exact brand, variant, volume and ABV matched to product listing and packshot; local visual QA pending.",
+    "rights_note": "Public retailer catalog photograph. Reuse license not verified; public availability does not establish permission.",
+    "verified_remote": true,
+    "catalog_name": "Виски зерновой \"ДЖЕК ДЭНИЕЛ`С ТЕННЕССИ ВИСКИ\" 0,7л 40%",
+    "published_image": "embedded:384"
+  },
+  {
+    "code": "866",
+    "name": "Спиртной напиток прочий - Спиртной напиток \"ТЕКИЛА ОЛЬМЕКА СИЛЬВЕР\" 0,7л 35%",
+    "source_page": "https://durstexpress.at/Olmeca-Tequila-Blanco-07l",
+    "image_url": "https://durstexpress.at/WebRoot/Store22/Shops/2eb0db89-d9c8-4bc9-88f3-94913386c5ec/6457/4F5A/8AAF/7D50/F923/0A48/3532/629C/olmeca_blanco.png",
+    "match_note": "Exact brand, variant, volume and ABV matched to product listing and packshot; local visual QA pending.",
+    "rights_note": "Public retailer catalog photograph. Reuse license not verified; public availability does not establish permission.",
+    "verified_remote": true,
+    "catalog_name": "Спиртной напиток прочий - Спиртной напиток \"ТЕКИЛА ОЛЬМЕКА СИЛЬВЕР\" 0,7л 35%",
+    "published_image": "embedded:866"
+  },
+  {
+    "code": "7708",
+    "name": "Спиртной напиток \"СОДЖУ ЧУМ ЧУРУМ СУНХАРИ со вкусом и ароматом Персик\" 0,36л 12%",
+    "source_page": "https://soju.nl/products/chum-churum-soonhari-peach-soju",
+    "image_url": "https://soju.nl/cdn/shop/files/Soonhari_Chum-Churum_Peach.jpg?v=1691514201",
+    "match_note": "Exact brand, variant, volume and ABV matched to product listing and packshot; local visual QA pending.",
+    "rights_note": "Public retailer catalog photograph. Reuse license not verified; public availability does not establish permission.",
+    "verified_remote": true,
+    "catalog_name": "Спиртной напиток \"СОДЖУ ЧУМ ЧУРУМ СУНХАРИ со вкусом и ароматом Персик\" 0,36л 12%",
+    "published_image": "embedded:7708"
+  },
+  {
+    "code": "7711",
+    "name": "Спиртной напиток \"СОДЖУ ЧУМ ЧУРУМ СУНХАРИ\" со вкусом и ароматом Яблоко 0,36л 12%",
+    "source_page": "https://winehelp2.ru/product/sodzhu-soju-chum-churum-soonhari-apple-360-ml-12/",
+    "image_url": "https://winehelp2.ru/upload/iblock/adf/9lgjtypo58sl4zbxww355bag1p4a4ca3.webp",
+    "match_note": "Exact brand, variant, volume and ABV matched to product listing and packshot; local visual QA pending.",
+    "rights_note": "Public retailer catalog photograph. Reuse license not verified; public availability does not establish permission.",
+    "verified_remote": true,
+    "catalog_name": "Спиртной напиток \"СОДЖУ ЧУМ ЧУРУМ СУНХАРИ\" со вкусом и ароматом Яблоко 0,36л 12%",
+    "published_image": "embedded:7711"
+  },
+  {
+    "code": "7712",
+    "name": "Спиртной напиток \"СОДЖУ ЧУМ ЧУРУМ СУНХАРИ\" со вкусом и ароматом Голубика 0,36л 12%",
+    "source_page": "https://www.lottemart.vn/vi-nsg/product/chum-churum-soju-blueberry-flavor-12-abv-bottle-360ml-8801030000488-p11074",
+    "image_url": "https://www.lottemart.vn/media/catalog/product/cache/0x0/8/8/8801030000488-1.jpg.webp",
+    "match_note": "Exact brand, variant, volume and ABV matched to product listing and packshot; local visual QA pending.",
+    "rights_note": "Public retailer catalog photograph. Reuse license not verified; public availability does not establish permission.",
+    "verified_remote": true,
+    "catalog_name": "Спиртной напиток \"СОДЖУ ЧУМ ЧУРУМ СУНХАРИ\" со вкусом и ароматом Голубика 0,36л 12%",
+    "published_image": "embedded:7712"
+  },
+  {
+    "code": "7710",
+    "name": "Спиртной напиток \"СОДЖУ ЧУМ ЧУРУМ СУНХАРИ\" со вкусом и ароматом Цитрон 0,36л 12%",
+    "source_page": "https://sunsun.co.za/products/chum-churum-korean-soju-soon-citron-12-360ml",
+    "image_url": "https://sunsun.co.za/cdn/shop/files/1ChaiChumchurumSojuCitron12_360ml_v_Chanh_1024x1024%402x.jpg?v=1691150234",
+    "match_note": "Exact brand, variant, volume and ABV matched to product listing and packshot; local visual QA pending.",
+    "rights_note": "Public retailer catalog photograph. Reuse license not verified; public availability does not establish permission.",
+    "verified_remote": true,
+    "catalog_name": "Спиртной напиток \"СОДЖУ ЧУМ ЧУРУМ СУНХАРИ\" со вкусом и ароматом Цитрон 0,36л 12%",
+    "published_image": "embedded:7710"
+  },
+  {
+    "code": "7706",
+    "name": "Спиртной напиток прочий - Спиртной напиток \"СОДЖУ ЧУМ ЧУРУМ\" 0,36л 16,5%",
+    "source_page": "https://cheapgrog.com.au/products/chum-churum-original-soju",
+    "image_url": "https://cheapgrog.com.au/cdn/shop/files/chum-churum-original-soju-360mlupd.png?v=1686398556",
+    "match_note": "Exact brand, variant, volume and ABV matched to product listing and packshot; local visual QA pending.",
+    "rights_note": "Public retailer catalog photograph. Reuse license not verified; public availability does not establish permission.",
+    "verified_remote": true,
+    "catalog_name": "Спиртной напиток прочий - Спиртной напиток \"СОДЖУ ЧУМ ЧУРУМ\" 0,36л 16,5%",
+    "published_image": "embedded:7706"
+  },
+  {
+    "code": "1193",
+    "name": "Водка \"ГЛАЗОВСКАЯ КЛАССИЧЕСКАЯ\" 0,5л 40%",
+    "source_page": "https://glvz.net/shop/vodka-glazovskaia-klassicheskaia-40-05l-oao-glazovskii-lvz000004618/",
+    "image_url": "https://glvz.net/media/images/img_full_000004618_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Глазовская Классическая 40% 0,5л ОАО Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка \"ГЛАЗОВСКАЯ КЛАССИЧЕСКАЯ\" 0,5л 40%",
+    "published_image": "embedded:1193"
+  },
+  {
+    "code": "1195",
+    "name": "Водка \"ГЛАЗОВСКАЯ КЛАССИЧЕСКАЯ\" 0,375л 40%",
+    "source_page": "https://glvz.net/shop/vodka-glazovskaia-klassicheskaia-40-0375l-oao-glazovskii-lvz000004651/",
+    "image_url": "https://glvz.net/media/images/img_full_000004651_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Глазовская Классическая 40% 0,375л ОАО Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка \"ГЛАЗОВСКАЯ КЛАССИЧЕСКАЯ\" 0,375л 40%",
+    "published_image": "embedded:1195"
+  },
+  {
+    "code": "1192",
+    "name": "Водка \"ГЛАЗОВСКАЯ КЛАССИЧЕСКАЯ\" 0,25л 40%",
+    "source_page": "https://glvz.net/shop/vodka-glazovskaia-klassicheskaia-40-025l-oao-glazovskii-lvz000004645/",
+    "image_url": "https://glvz.net/media/images/img_full_000004645_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Глазовская Классическая 40% 0,25л ОАО Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка \"ГЛАЗОВСКАЯ КЛАССИЧЕСКАЯ\" 0,25л 40%",
+    "published_image": "embedded:1192"
+  },
+  {
+    "code": "1194",
+    "name": "Водка \"ГЛАЗОВСКАЯ КЛАССИЧЕСКАЯ\" 0,7л 40%",
+    "source_page": "https://glvz.net/shop/vodka-glazovskaia-klassicheskaia-40-07l-oao-glazovskii-lvz000004652/",
+    "image_url": "https://glvz.net/media/images/img_full_000004652_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Глазовская Классическая 40% 0,7л ОАО Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка \"ГЛАЗОВСКАЯ КЛАССИЧЕСКАЯ\" 0,7л 40%",
+    "published_image": "embedded:1194"
+  },
+  {
+    "code": "02113",
+    "name": "Водка \"КАЛАШНИКОВ ПРЕМИУМ\" 0,5л 40%",
+    "source_page": "https://glvz.net/shop/vodka-kalashnikov-premium-40-05l-oao-glazovskii-lvz000004660/",
+    "image_url": "https://glvz.net/media/images/img_full_000004660_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Калашников Премиум 40% 0,5л ОАО Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка \"КАЛАШНИКОВ ПРЕМИУМ\" 0,5л 40%",
+    "published_image": "embedded:02113"
+  },
+  {
+    "code": "1196",
+    "name": "Водка \"ГОРНОЕ ОЗЕРО\" 0,25л 40%",
+    "source_page": "https://glvz.net/shop/vodka-gornoe-ozero-40-025l-oao-glazovskii-lvz000004590/",
+    "image_url": "https://glvz.net/media/images/img_full_000004590_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Горное Озеро 40% 0,25л ОАО Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка \"ГОРНОЕ ОЗЕРО\" 0,25л 40%",
+    "published_image": "embedded:1196"
+  },
+  {
+    "code": "1199",
+    "name": "Водка \"ГОРНОЕ ОЗЕРО\" 0,5л 40%",
+    "source_page": "https://glvz.net/shop/vodka-gornoe-ozero-gerda-40-05l-oao-glazovskii-lvz000004672/",
+    "image_url": "https://glvz.net/media/images/img_full_000004672_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Горное Озеро (герда) 40% 0,5л ОАО Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка \"ГОРНОЕ ОЗЕРО\" 0,5л 40%",
+    "published_image": "embedded:1199"
+  },
+  {
+    "code": "02112",
+    "name": "Водка \"КАЛАШНИКОВ ПРЕМИУМ\" 0,7л 40%",
+    "source_page": "https://glvz.net/shop/vodka-kalashnikov-premium-40-07l000004578/",
+    "image_url": "https://glvz.net/media/images/img_full_000004578_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Калашников Премиум 40% 0,7л",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка \"КАЛАШНИКОВ ПРЕМИУМ\" 0,7л 40%",
+    "published_image": "embedded:02112"
+  },
+  {
+    "code": "02143",
+    "name": "Водка \"ГОРНОЕ ОЗЕРО\" 0,1л 40%",
+    "source_page": "https://glvz.net/shop/vodka-gornoe-ozero-40-01l-oao-glazovskii-lvz000004607/",
+    "image_url": "https://glvz.net/media/images/img_full_000004607_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Горное Озеро 40% 0,1л ОАО Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка \"ГОРНОЕ ОЗЕРО\" 0,1л 40%",
+    "published_image": "embedded:02143"
+  },
+  {
+    "code": "02085",
+    "name": "Водка \"ГЛАЗОВСКАЯ КЛАССИЧЕСКАЯ\" 0,1л 40%",
+    "source_page": "https://glvz.net/shop/vodka-glazovskaia-klassicheskaia-40-01l-glazovskii-lvz000004649/",
+    "image_url": "https://glvz.net/media/images/img_full_000004649_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Глазовская Классическая 40% 0,1л Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка \"ГЛАЗОВСКАЯ КЛАССИЧЕСКАЯ\" 0,1л 40%",
+    "published_image": "embedded:02085"
+  },
+  {
+    "code": "02003",
+    "name": "Водка особая \"ХОЛОД\" 0,5л 40%",
+    "source_page": "https://glvz.net/shop/vodka-kholod-40-05l-khol-12-oao-glazovskii-lvz000004598/",
+    "image_url": "https://glvz.net/media/images/img_full_000004598_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Холод 40% 0,5л /Хол-12/ ОАО Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка особая \"ХОЛОД\" 0,5л 40%",
+    "published_image": "embedded:02003"
+  },
+  {
+    "code": "1197",
+    "name": "Водка \"ГОРНОЕ ОЗЕРО\" 0,375л 40%",
+    "source_page": "https://glvz.net/shop/vodka-gornoe-ozero-gerda-40-0375l-oao-glazovskii-lvz000004676/",
+    "image_url": "https://glvz.net/media/images/img_full_000004676_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Горное Озеро (герда) 40% 0,375л ОАО Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка \"ГОРНОЕ ОЗЕРО\" 0,375л 40%",
+    "published_image": "embedded:1197"
+  },
+  {
+    "code": "02004",
+    "name": "Водка особая \"ХОЛОД\" 0,7л 40%",
+    "source_page": "https://glvz.net/shop/vodka-kholod-40-07l-khol-9-oao-glazovskii-lvz000004604/",
+    "image_url": "https://glvz.net/media/images/img_full_000004604_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Холод 40% 0,7л /Хол-9/ ОАО Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка особая \"ХОЛОД\" 0,7л 40%",
+    "published_image": "embedded:02004"
+  },
+  {
+    "code": "02114",
+    "name": "Водка особая \"КАЛАШНИКОВ. КЕДРОВЫЙ\" 0,5л 40%",
+    "source_page": "https://glvz.net/shop/vodka-kalashnikov-kedrovyi-40-05l000004669/",
+    "image_url": "https://glvz.net/media/images/img_full_000004669_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Калашников.Кедровый 40% 0,5л",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка особая \"КАЛАШНИКОВ. КЕДРОВЫЙ\" 0,5л 40%",
+    "published_image": "embedded:02114"
+  },
+  {
+    "code": "02007",
+    "name": "Водка \"ЛЕДНИК\" 0,5л 40%",
+    "source_page": "https://glvz.net/shop/vodka-lednik-40-05l-khol-12-23-oao-glazovskii-lvz000007797/",
+    "image_url": "https://glvz.net/media/images/img_full_000007797_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Ледник 40% 0,5л /Хол-12/23 ОАО Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка \"ЛЕДНИК\" 0,5л 40%",
+    "published_image": "embedded:02007"
+  },
+  {
+    "code": "1198",
+    "name": "Водка \"ГОРНОЕ ОЗЕРО\" 0,7л 40%",
+    "source_page": "https://glvz.net/shop/vodka-gornoe-ozero-gerda-40-07l-oao-glazovskii-lvz000004600/",
+    "image_url": "https://glvz.net/media/images/img_full_000004600_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Горное Озеро (герда) 40% 0,7л ОАО Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка \"ГОРНОЕ ОЗЕРО\" 0,7л 40%",
+    "published_image": "embedded:1198"
+  },
+  {
+    "code": "02087",
+    "name": "Водка особая \"КАЛАШНИКОВ УНИК\" 0,7л 40%",
+    "source_page": "https://glvz.net/shop/vodka-kalashnikov-osobaia-unik-40-07l-novaia-9-glazovskii-lvz000004586/",
+    "image_url": "https://glvz.net/media/images/img_full_000004586_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Калашников Особая Уник 40% 0,7л /новая-9/ Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка особая \"КАЛАШНИКОВ УНИК\" 0,7л 40%",
+    "published_image": "embedded:02087"
+  },
+  {
+    "code": "02040",
+    "name": "Водка \"ЛЕДНИК\" 0,25л 40%",
+    "source_page": "https://glvz.net/shop/vodka-lednik-40-025l-oao-glazovskii-lvz000004678/",
+    "image_url": "https://glvz.net/media/images/img_full_000004678_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Ледник 40% 0,25л ОАО Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка \"ЛЕДНИК\" 0,25л 40%",
+    "published_image": "embedded:02040"
+  },
+  {
+    "code": "02005",
+    "name": "Водка особая \"ЛЕДНИК МОРОШКА\" 0,5л 40%",
+    "source_page": "https://glvz.net/shop/vodka-lednik-moroshka-40-05l-khol-12-oao-glazovskii-lvz000004668/",
+    "image_url": "https://glvz.net/media/images/img_full_000004668_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Ледник Морошка 40% 0,5л /Хол-12/ ОАО Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка особая \"ЛЕДНИК МОРОШКА\" 0,5л 40%",
+    "published_image": "embedded:02005"
+  },
+  {
+    "code": "2000",
+    "name": "Водка особая \"ГОРНОЕ ОЗЕРО ЧЕРНАЯ СМОРОДИНА\" 0,5л 38%",
+    "source_page": "https://glvz.net/shop/vodka-gornoe-ozero-chernaia-smorodina-gerda-38-05l-oao-glazovskii-lvz000004633/",
+    "image_url": "https://glvz.net/media/images/img_full_000004633_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Горное Озеро Черная Смородина (герда) 38% 0,5л ОАО Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка особая \"ГОРНОЕ ОЗЕРО ЧЕРНАЯ СМОРОДИНА\" 0,5л 38%",
+    "published_image": "embedded:2000"
+  },
+  {
+    "code": "02253",
+    "name": "Водка особая \"ЛЕДНИК\" 0,375л 40%",
+    "source_page": "https://glvz.net/shop/vodka-lednik-40-0375l-oao-glazovskii-lvz000004617/",
+    "image_url": "https://glvz.net/media/images/img_full_000004617_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Ледник 40% 0,375л ОАО Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка особая \"ЛЕДНИК\" 0,375л 40%",
+    "published_image": "embedded:02253"
+  },
+  {
+    "code": "02006",
+    "name": "Водка особая \"ЛЕДНИК МОРОШКА\" 0,7л 40%",
+    "source_page": "https://glvz.net/shop/vodka-lednik-moroshka-40-07l-khol-9-oao-glazovskii-lvz000004583/",
+    "image_url": "https://glvz.net/media/images/img_full_000004583_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Ледник Морошка 40% 0,7л /Хол-9/ ОАО Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка особая \"ЛЕДНИК МОРОШКА\" 0,7л 40%",
+    "published_image": "embedded:02006"
+  },
+  {
+    "code": "02008",
+    "name": "Водка \"ЛЕДНИК\" 0,7л 40%",
+    "source_page": "https://glvz.net/shop/vodka-lednik-40-07l-khol-9-23-oao-glazovskii-lvz000007794/",
+    "image_url": "https://glvz.net/media/images/img_full_000007794_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Ледник 40% 0,7л /Хол-9/23 ОАО Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка \"ЛЕДНИК\" 0,7л 40%",
+    "published_image": "embedded:02008"
+  },
+  {
+    "code": "02086",
+    "name": "Водка \"КАЛАШНИКОВ. ОРИГИНАЛЬНЫЙ\" 0,5л 40%",
+    "source_page": "https://glvz.net/shop/vodka-kalashnikov-originalnyi-40-05l000004623/",
+    "image_url": "https://glvz.net/media/images/img_full_000004623_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Калашников.Оригинальный 40% 0,5л",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка \"КАЛАШНИКОВ. ОРИГИНАЛЬНЫЙ\" 0,5л 40%",
+    "published_image": "embedded:02086"
+  },
+  {
+    "code": "02039",
+    "name": "Водка \"ЛЕДНИК\" 0,1л 40%",
+    "source_page": "https://glvz.net/shop/vodka-lednik-40-01l-oao-glazovskii-lvz000004596/",
+    "image_url": "https://glvz.net/media/images/img_full_000004596_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка Ледник 40% 0,1л ОАО Глазовский ЛВЗ",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка \"ЛЕДНИК\" 0,1л 40%",
+    "published_image": "embedded:02039"
+  },
+  {
+    "code": "02173",
+    "name": "Водка «Чайковский» 0,7л 40% в (ТУБУСЕ)",
+    "source_page": "https://glvz.net/shop/vodka-chaikovskii-v-tubuse-40-0-7l000004968/",
+    "image_url": "https://glvz.net/media/images/img_full_000004968_001.png",
+    "match_note": "Exact brand, variant, volume and bottle/box match in Glazov retail catalog: Водка ЧАЙКОВСКИЙ в тубусе 40% 0.7л",
+    "rights_note": "Public manufacturer retail catalog; no explicit reuse license found.",
+    "catalog_name": "Водка «Чайковский» 0,7л 40% в (ТУБУСЕ)",
+    "published_image": "embedded:02173"
+  },
+  {
+    "code": "2010",
+    "name": "Водка \"ЖУРАВУШКА МЯГКАЯ\" 0,5л 40%",
+    "source_page": "https://lightsmarket.bg/zuravuskka-vodka-05l-40",
+    "image_url": "https://lightsmarket.bg/UserFiles/Product/gallery_1/3493750x0.jpg?block=&cache=&color=ffffff&h=640&w=640",
+    "match_note": "Exact brand, variant and 0.5 L / 40% matching catalog and image.",
+    "rights_note": "Public retailer catalog; no explicit reuse license found.",
+    "catalog_name": "Водка \"ЖУРАВУШКА МЯГКАЯ\" 0,5л 40%",
+    "published_image": "embedded:2010"
+  },
+  {
+    "code": "1069",
+    "name": "Водка \"ЖУРАВУШКА КЛАССИЧЕСКАЯ\" 0,5л 40%",
+    "source_page": "https://winemore.ru/catalog/krepkie_napitki/vodka_zhuravushka_klassicheskaya_05_l/",
+    "image_url": "https://winemore.ru/upload/dev2fun.imagecompress/webp/iblock/0c6/q1jby2uqrsiyzk25we0epomim4wocads/0_0_orig.webp",
+    "match_note": "Exact brand, variant and 0.5 L / 40% matching catalog and image.",
+    "rights_note": "Public retailer catalog; no explicit reuse license found.",
+    "catalog_name": "Водка \"ЖУРАВУШКА КЛАССИЧЕСКАЯ\" 0,5л 40%",
+    "published_image": "embedded:1069"
+  },
+  {
+    "code": "02241",
+    "name": "Водка \"БОЯРСКАЯ ДУША КЛАССИЧЕСКАЯ\" 0,5л 40%",
+    "source_page": "https://sunvl.ru/catalog/vodka/vodka-boyarskaya-dusha-klassicheskaya-0-5l-40/",
+    "image_url": "https://sunvl.ru/images/items/bd_classic_05.jpg",
+    "match_note": "Exact brand, variant and 0.5 L / 40% matching catalog and image.",
+    "rights_note": "Public retailer catalog; no explicit reuse license found.",
+    "catalog_name": "Водка \"БОЯРСКАЯ ДУША КЛАССИЧЕСКАЯ\" 0,5л 40%",
+    "published_image": "embedded:02241"
+  },
+  {
+    "code": "8604",
+    "name": "Российское вино с ЗГУ \"Кубань. Таманский полуостров\" сух.бел.\"Шато Тамань Дуо\" Люди 0,75л 11%",
+    "source_page": "https://chateautamagne.ru/catalog/wine/80",
+    "image_url": "https://chateautamagne.ru/files/images/wine/image/12/66/126674355447dbb0d29db93223ed94caefb64b.png",
+    "match_note": "Producer product page verifies Chateau Tamagne Duo dry white, 0.75 L; 10.5–12.5% includes catalog 11%. People illustration label.",
+    "rights_note": "Public producer packshot; no explicit reuse license located; rights remain with source.",
+    "catalog_name": "Российское вино с ЗГУ \"Кубань. Таманский полуостров\" сух.бел.\"Шато Тамань Дуо\" Люди 0,75л 11%",
+    "published_image": "embedded:8604"
+  }
+]
