@@ -84,6 +84,7 @@
     </div>
   </div>
 
+  <div class="catalog-actions-bar"><button id="cart-open" class="cart-open" type="button">B2B-заявка <span id="cart-count">0</span></button><p>Онлайн-оплата алкогольной продукции на сайте не производится. Заявка направляется менеджеру для согласования поставки.</p></div>
   <div class="catalog-result-row">
     <p id="catalog-count" role="status" aria-live="polite">Загружаем ассортимент…</p>
     <p>Для деловых партнёров · без розничной продажи на сайте</p>
@@ -102,6 +103,12 @@
   <div><p>Расскажите, что требуется вашему магазину, ресторану или компании. Мы обсудим ассортимент и условия работы.</p><a class="button button-primary" href="index.html#partnership">Стать партнёром <span>↗</span></a></div>
 </section>
 </main>
+<aside id="cart-drawer" class="cart-drawer" hidden aria-label="B2B-заявка">
+  <div class="cart-head"><div><small>КОРЗИНА ЗАЯВКИ</small><h2>Запросить условия</h2></div><button id="cart-close" type="button" aria-label="Закрыть">×</button></div>
+  <div class="cart-items"></div>
+  <div class="cart-note">Это B2B-заявка, а не дистанционная розничная покупка. Менеджер подтвердит наличие, цену и допустимый способ расчёта.</div>
+  <button id="cart-send" class="gold-button" type="button">Отправить заявку <span>→</span></button>
+</aside>
 
 <footer class="lux-footer">
   <div><strong>DV LEGION</strong><small>Алкогольная дистрибуция · Сахалин</small></div>
