@@ -11,6 +11,8 @@ const selectedCategory=document.querySelector('#selected-category');
 const groupButtons=document.querySelectorAll('[data-category]');
 const reset=document.querySelector('#reset');
 const CART_KEY='dv-legion-b2b-cart';
+const SHOP_KEY='dv-legion-online-cart';
+const ONLINE_CATEGORIES=new Set(['Безалкогольные напитки','Продукты и прочий ассортимент']);
 
 let items=[];
 let page=1;
@@ -21,6 +23,36 @@ const normalize=value=>String(value||'').toLocaleLowerCase('ru').replaceAll('ё'
 const getCart=()=>{try{return JSON.parse(localStorage.getItem(CART_KEY)||'[]')}catch{return[]}};
 const setCart=cart=>{localStorage.setItem(CART_KEY,JSON.stringify(cart));updateCartBadge()};
 const updateCartBadge=()=>{const b=document.querySelector('#cart-count');if(b)b.textContent=getCart().reduce((s,x)=>s+(x.qty||1),0)};
+const getShopCart=()=>{try{return JSON.parse(localStorage.getItem(SHOP_KEY)||'[]')}catch{return[]}};
+const setShopCart=cart=>{localStorage.setItem(SHOP_KEY,JSON.stringify(cart));updateShopBadge()};
+const updateShopBadge=()=>{const b=document.querySelector('#shop-count');if(b)b.textContent=getShopCart().reduce((s,x)=>s+(x.qty||1),0)};
+function addToShopCart(item){
+ if(!ONLINE_CATEGORIES.has(item.category)) return;
+ const cart=getShopCart(); const found=cart.find(x=>x.code===item.code);
+ if(found)found.qty=(found.qty||1)+1; else cart.push({code:item.code,name:item.name,category:item.category,qty:1});
+ setShopCart(cart); openShopCart();
+}
+function closeShopCart(){const d=document.querySelector('#shop-drawer');if(d)d.hidden=true;document.body.classList.remove('shop-cart-open')}
+function openShopCart(){
+ const drawer=document.querySelector('#shop-drawer'); if(!drawer)return;
+ const list=drawer.querySelector('.shop-items'); const cart=getShopCart(); list.replaceChildren();
+ if(!cart.length){const p=document.createElement('p');p.className='cart-empty';p.textContent='Корзина покупок пуста.';list.append(p)}
+ for(const item of cart){
+   const row=document.createElement('div');row.className='cart-item';
+   const txt=document.createElement('div');txt.innerHTML='<strong></strong><small></small>';txt.querySelector('strong').textContent=item.name;txt.querySelector('small').textContent='Код '+item.code;
+   const controls=document.createElement('div');controls.className='cart-qty';
+   const minus=document.createElement('button');minus.type='button';minus.textContent='−';
+   const qty=document.createElement('input');qty.type='number';qty.min='1';qty.step='1';qty.inputMode='numeric';qty.value=String(item.qty||1);qty.className='cart-qty-input';qty.setAttribute('aria-label','Количество: '+item.name);
+   const plus=document.createElement('button');plus.type='button';plus.textContent='+';
+   const save=()=>{const value=Math.max(1,Math.floor(Number(qty.value)||1));const c=getShopCart();const x=c.find(z=>z.code===item.code);if(x)x.qty=value;setShopCart(c);qty.value=String(value)};
+   minus.onclick=()=>{const c=getShopCart();const x=c.find(z=>z.code===item.code);if(x){x.qty--;if(x.qty<=0)c.splice(c.indexOf(x),1)}setShopCart(c);openShopCart()};
+   plus.onclick=()=>{const c=getShopCart();const x=c.find(z=>z.code===item.code);if(x)x.qty++;setShopCart(c);openShopCart()};
+   qty.onchange=save; qty.onblur=save; qty.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();save();qty.blur()}};
+   controls.append(minus,qty,plus);row.append(txt,controls);list.append(row);
+ }
+ drawer.querySelector('#shop-checkout').disabled=!cart.length;
+ drawer.hidden=false;document.body.classList.add('shop-cart-open');
+}
 function addToCart(item){
  const cart=getCart(); const found=cart.find(x=>x.code===item.code);
  if(found)found.qty=(found.qty||1)+1; else cart.push({code:item.code,name:item.name,category:item.category,qty:1});
@@ -83,8 +115,12 @@ function render(){
     const title=document.createElement('h3');title.textContent=item.name;
     const code=document.createElement('p');code.className='product-code';code.textContent='Код: '+item.code;
     const link=document.createElement('a');link.href='mailto:info@dv-legion.ru?subject='+encodeURIComponent('Запрос по ассортименту: '+item.code)+'&body='+encodeURIComponent('Здравствуйте!\nПрошу уточнить наличие, оптовую цену и условия поставки:\n'+item.name+'\nКод: '+item.code+'\n\nОрганизация:\nКоличество:\nТелефон:');link.textContent='Запросить условия ↗';
-    const add=document.createElement('button');add.type='button';add.className='add-request';add.textContent='В заявку +';add.addEventListener('click',()=>addToCart(item));
-card.append(media,tag,title,code,add,link);products.append(card);
+    const add=document.createElement('button');add.type='button';add.className='add-request';add.textContent='В B2B-заявку +';add.addEventListener('click',()=>addToCart(item));
+    const actions=[media,tag,title,code];
+    if(ONLINE_CATEGORIES.has(item.category)){
+      const buy=document.createElement('button');buy.type='button';buy.className='buy-online';buy.textContent='Купить онлайн';buy.addEventListener('click',()=>addToShopCart(item));actions.push(buy);
+    }
+    actions.push(add,link);card.append(...actions);products.append(card);
   }
   status.textContent=filtered.length?'Страница '+page+' из '+pages:'Нет результатов';
   prev.disabled=page<=1;next.disabled=page>=pages;
@@ -97,11 +133,14 @@ reset.addEventListener('click',()=>{search.value='';category.value='';page=1;syn
 prev.addEventListener('click',()=>{page--;render();document.querySelector('.catalog-result-row').scrollIntoView({block:'start'});});
 next.addEventListener('click',()=>{page++;render();document.querySelector('.catalog-result-row').scrollIntoView({block:'start'});});
 
-fetch('catalog-data.json').then(response=>{if(!response.ok)throw new Error('load');return response.json();}).then(data=>{if(!Array.isArray(data))throw new Error('format');items=data;const params=new URLSearchParams(location.search);const selected=params.get('category');const q=params.get('q');if(categoryOrder.includes(selected))category.value=selected;if(q)search.value=q;render();updateCartBadge();}).catch(()=>{count.textContent='Не удалось загрузить каталог. Обновите страницу или свяжитесь с нами: info@dv-legion.ru.';search.disabled=true;category.disabled=true;reset.disabled=true;});
+fetch('catalog-data.json').then(response=>{if(!response.ok)throw new Error('load');return response.json();}).then(data=>{if(!Array.isArray(data))throw new Error('format');items=data;const params=new URLSearchParams(location.search);const selected=params.get('category');const q=params.get('q');if(categoryOrder.includes(selected))category.value=selected;if(q)search.value=q;render();updateCartBadge();updateShopBadge();}).catch(()=>{count.textContent='Не удалось загрузить каталог. Обновите страницу или свяжитесь с нами: info@dv-legion.ru.';search.disabled=true;category.disabled=true;reset.disabled=true;});
 
 document.addEventListener('DOMContentLoaded',()=>{
  updateCartBadge();
  document.querySelector('#cart-open')?.addEventListener('click',openCart);
  document.querySelector('#cart-close')?.addEventListener('click',closeCart);
  document.querySelector('#cart-send')?.addEventListener('click',sendCartRequest);
+ document.querySelector('#shop-open')?.addEventListener('click',openShopCart);
+ document.querySelector('#shop-close')?.addEventListener('click',closeShopCart);
+ document.querySelector('#shop-checkout')?.addEventListener('click',()=>{if(getShopCart().length)location.href='checkout.html'});
 });
