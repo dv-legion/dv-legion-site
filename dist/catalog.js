@@ -10,6 +10,7 @@ const status=document.querySelector('#page-status');
 const selectedCategory=document.querySelector('#selected-category');
 const groupButtons=document.querySelectorAll('[data-category]');
 const reset=document.querySelector('#reset');
+const CART_KEY='dv-legion-b2b-cart';
 
 let items=[];
 let page=1;
@@ -17,6 +18,38 @@ const size=24;
 const categoryOrder=['Водка','Вина','Игристые вина','Коньяк и бренди','Виски','Ром','Джин','Ликёры и аперитивы','Настойки и бальзамы','Коктейли и спиртные напитки','Плодовая продукция и напитки','Сидр','Безалкогольные напитки','Продукты и прочий ассортимент'];
 const categoryLabel=value=>value==='Игристые вина'?'Игристые вина':value;
 const normalize=value=>String(value||'').toLocaleLowerCase('ru').replaceAll('ё','е').replaceAll(',','.').replace(/\s+/g,' ').trim();
+const getCart=()=>{try{return JSON.parse(localStorage.getItem(CART_KEY)||'[]')}catch{return[]}};
+const setCart=cart=>{localStorage.setItem(CART_KEY,JSON.stringify(cart));updateCartBadge()};
+const updateCartBadge=()=>{const b=document.querySelector('#cart-count');if(b)b.textContent=getCart().reduce((s,x)=>s+(x.qty||1),0)};
+function addToCart(item){
+ const cart=getCart(); const found=cart.find(x=>x.code===item.code);
+ if(found)found.qty=(found.qty||1)+1; else cart.push({code:item.code,name:item.name,category:item.category,qty:1});
+ setCart(cart); openCart();
+}
+function openCart(){
+ const drawer=document.querySelector('#cart-drawer'); if(!drawer)return;
+ const list=drawer.querySelector('.cart-items'); const cart=getCart(); list.replaceChildren();
+ if(!cart.length){const p=document.createElement('p');p.className='cart-empty';p.textContent='Корзина заявки пуста.';list.append(p)}
+ for(const item of cart){
+   const row=document.createElement('div');row.className='cart-item';
+   const txt=document.createElement('div');txt.innerHTML='<strong></strong><small></small>';txt.querySelector('strong').textContent=item.name;txt.querySelector('small').textContent='Код '+item.code;
+   const controls=document.createElement('div');controls.className='cart-qty';
+   const minus=document.createElement('button');minus.type='button';minus.textContent='−';
+   const qty=document.createElement('span');qty.textContent=item.qty||1;
+   const plus=document.createElement('button');plus.type='button';plus.textContent='+';
+   minus.onclick=()=>{const c=getCart();const x=c.find(z=>z.code===item.code);if(x){x.qty--;if(x.qty<=0)c.splice(c.indexOf(x),1)}setCart(c);openCart()};
+   plus.onclick=()=>{const c=getCart();const x=c.find(z=>z.code===item.code);if(x)x.qty++;setCart(c);openCart()};
+   controls.append(minus,qty,plus); row.append(txt,controls);list.append(row);
+ }
+ drawer.hidden=false; document.body.classList.add('cart-open');
+}
+function closeCart(){const d=document.querySelector('#cart-drawer');if(d)d.hidden=true;document.body.classList.remove('cart-open')}
+function sendCartRequest(){
+ const cart=getCart(); if(!cart.length)return;
+ const lines=cart.map((x,i)=>(i+1)+'. '+x.name+' | код '+x.code+' | количество '+x.qty);
+ const body=['Здравствуйте!','','Прошу подготовить коммерческие условия / счёт по позициям:','',...lines,'','Организация:','Контактное лицо:','Телефон:','Город:'].join('\n');
+ location.href='mailto:info@dv-legion.ru?subject='+encodeURIComponent('B2B-заявка с сайта ДВ Легион')+'&body='+encodeURIComponent(body);
+}
 
 function syncUrl(){
   const url=new URL(location.href);
@@ -46,7 +79,8 @@ function render(){
     const title=document.createElement('h3');title.textContent=item.name;
     const code=document.createElement('p');code.className='product-code';code.textContent='Код: '+item.code;
     const link=document.createElement('a');link.href='mailto:info@dv-legion.ru?subject='+encodeURIComponent('Запрос по ассортименту: '+item.code)+'&body='+encodeURIComponent('Здравствуйте!\nПрошу уточнить наличие, оптовую цену и условия поставки:\n'+item.name+'\nКод: '+item.code+'\n\nОрганизация:\nКоличество:\nТелефон:');link.textContent='Запросить условия ↗';
-    card.append(media,tag,title,code,link);products.append(card);
+    const add=document.createElement('button');add.type='button';add.className='add-request';add.textContent='В заявку +';add.addEventListener('click',()=>addToCart(item));
+card.append(media,tag,title,code,add,link);products.append(card);
   }
   status.textContent=filtered.length?'Страница '+page+' из '+pages:'Нет результатов';
   prev.disabled=page<=1;next.disabled=page>=pages;
@@ -59,4 +93,11 @@ reset.addEventListener('click',()=>{search.value='';category.value='';page=1;syn
 prev.addEventListener('click',()=>{page--;render();document.querySelector('.catalog-result-row').scrollIntoView({block:'start'});});
 next.addEventListener('click',()=>{page++;render();document.querySelector('.catalog-result-row').scrollIntoView({block:'start'});});
 
-fetch('catalog-data.json').then(response=>{if(!response.ok)throw new Error('load');return response.json();}).then(data=>{if(!Array.isArray(data))throw new Error('format');items=data;const selected=new URLSearchParams(location.search).get('category');if(categoryOrder.includes(selected))category.value=selected;render();}).catch(()=>{count.textContent='Не удалось загрузить каталог. Обновите страницу или свяжитесь с нами: info@dv-legion.ru.';search.disabled=true;category.disabled=true;reset.disabled=true;});
+fetch('catalog-data.json').then(response=>{if(!response.ok)throw new Error('load');return response.json();}).then(data=>{if(!Array.isArray(data))throw new Error('format');items=data;const params=new URLSearchParams(location.search);const selected=params.get('category');const q=params.get('q');if(categoryOrder.includes(selected))category.value=selected;if(q)search.value=q;render();updateCartBadge();}).catch(()=>{count.textContent='Не удалось загрузить каталог. Обновите страницу или свяжитесь с нами: info@dv-legion.ru.';search.disabled=true;category.disabled=true;reset.disabled=true;});
+
+document.addEventListener('DOMContentLoaded',()=>{
+ updateCartBadge();
+ document.querySelector('#cart-open')?.addEventListener('click',openCart);
+ document.querySelector('#cart-close')?.addEventListener('click',closeCart);
+ document.querySelector('#cart-send')?.addEventListener('click',sendCartRequest);
+});
