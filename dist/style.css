@@ -305,11 +305,11 @@ linear-gradient(135deg,var(--navy),var(--deep));color:#fff;min-height:720px}
 
 /* approved DV Legion logo */
 .logo-image-link{display:inline-flex;align-items:center;padding:0;background:transparent}
-.brand-logo{display:block;width:310px;max-width:36vw;height:74px;object-fit:contain;object-position:left center;background:transparent;border-radius:0;padding:0}
-.footer-brand-logo{width:330px;height:82px;max-width:100%}
+.brand-logo{display:block;width:310px;max-width:34vw;height:76px;object-fit:contain;object-position:left center;background:transparent;border-radius:0;padding:0}
+.footer-brand-logo{width:350px;height:86px;max-width:100%}
 .error-logo{display:block;width:min(560px,88vw);height:auto;margin-bottom:28px;background:transparent;border-radius:0;padding:0}
-@media(max-width:900px){.brand-logo{width:260px;height:64px;max-width:52vw}}
-@media(max-width:620px){.brand-logo{width:210px;height:52px;max-width:64vw;padding:0}.footer-brand-logo{width:250px;height:62px}}
+@media(max-width:900px){.brand-logo{width:265px;height:64px;max-width:52vw}}
+@media(max-width:620px){.brand-logo{width:215px;height:52px;max-width:64vw;padding:0}.footer-brand-logo{width:260px;height:64px}}
 
 /* light chrome for original black/green logo */
 .site-header{background:rgba(250,249,247,.96);color:var(--ink);border-bottom:1px solid var(--line)}
