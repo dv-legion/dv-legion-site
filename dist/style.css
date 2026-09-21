@@ -306,3 +306,4 @@ linear-gradient(135deg,var(--navy),var(--deep));color:#fff;min-height:720px}
   html{scroll-behavior:auto}
   *{transition:none!important}
 }
+.error-page{min-height:100vh;display:grid;place-items:center;padding:8vw;background:radial-gradient(circle at 75% 25%,rgba(199,141,98,.14),transparent 28%),var(--deep);color:#fff}.error-page>div{width:min(800px,100%)}.error-page h1{font-size:clamp(58px,8vw,110px);line-height:.92;letter-spacing:-4px;margin:24px 0}.error-page>div>p:not(.eyebrow){max-width:520px;color:#aeb9bd;font-size:18px}.error-button{border-color:#ffffff55;color:#fff;background:transparent}
