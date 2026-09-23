@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://nbastrakov-create.github.io/dv-legion-site/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://nbastrakov-create.github.io/dv-legion-site/catalog.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://nbastrakov-create.github.io/dv-legion-site/about.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://nbastrakov-create.github.io/dv-legion-site/partners.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://dv-legion.ru/</loc></url>
+<url><loc>https://dv-legion.ru/catalog.html</loc></url>
+<url><loc>https://dv-legion.ru/about.html</loc></url>
+<url><loc>https://dv-legion.ru/partners.html</loc></url>
+<url><loc>https://dv-legion.ru/vodka.html</loc></url>
+<url><loc>https://dv-legion.ru/wine.html</loc></url>
+<url><loc>https://dv-legion.ru/sparkling.html</loc></url>
+<url><loc>https://dv-legion.ru/cognac.html</loc></url>
+<url><loc>https://dv-legion.ru/whisky.html</loc></url>
+<url><loc>https://dv-legion.ru/rum.html</loc></url>
+<url><loc>https://dv-legion.ru/gin.html</loc></url>
+<url><loc>https://dv-legion.ru/liqueurs.html</loc></url>
+<url><loc>https://dv-legion.ru/tinctures.html</loc></url>
+<url><loc>https://dv-legion.ru/cocktails.html</loc></url>
+<url><loc>https://dv-legion.ru/fruit-drinks.html</loc></url>
+<url><loc>https://dv-legion.ru/cider.html</loc></url>
+<url><loc>https://dv-legion.ru/soft-drinks.html</loc></url>
+<url><loc>https://dv-legion.ru/other.html</loc></url>
 </urlset>

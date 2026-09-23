@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nbastrakov-create.github.io/dv-legion-site/sitemap.xml
+Sitemap: https://dv-legion.ru/sitemap.xml

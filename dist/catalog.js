@@ -12,7 +12,7 @@ const groupButtons=document.querySelectorAll('[data-category]');
 const reset=document.querySelector('#reset');
 const CART_KEY='dv-legion-b2b-cart';
 const SHOP_KEY='dv-legion-online-cart';
-const ONLINE_CATEGORIES=new Set(['Безалкогольные напитки','Продукты и прочий ассортимент']);
+const ONLINE_CATEGORIES=new Set(); // This B2B site prepares requests; it does not take online payments.
 
 let items=[];
 let page=1;
@@ -20,10 +20,11 @@ const size=24;
 const categoryOrder=['Водка','Вина','Игристые вина','Коньяк и бренди','Виски','Ром','Джин','Ликёры и аперитивы','Настойки и бальзамы','Коктейли и спиртные напитки','Плодовая продукция и напитки','Сидр','Безалкогольные напитки','Продукты и прочий ассортимент'];
 const categoryLabel=value=>value==='Игристые вина'?'Игристые вина':value;
 const normalize=value=>String(value||'').toLocaleLowerCase('ru').replaceAll('ё','е').replaceAll(',','.').replace(/\s+/g,' ').trim();
-const getCart=()=>{try{return JSON.parse(localStorage.getItem(CART_KEY)||'[]')}catch{return[]}};
-const setCart=cart=>{localStorage.setItem(CART_KEY,JSON.stringify(cart));updateCartBadge()};
+let memoryCart=[];
+const getCart=()=>{try{const data=JSON.parse(localStorage.getItem(CART_KEY)||'[]');return Array.isArray(data)?data.filter(x=>x&&typeof x.name==='string'&&typeof x.code==='string').map(x=>({...x,qty:Math.min(99999,Math.max(1,Math.floor(Number(x.qty)||1)))})):[]}catch{return memoryCart}};
+const setCart=cart=>{memoryCart=cart;try{localStorage.setItem(CART_KEY,JSON.stringify(cart))}catch{}updateCartBadge()};
 const updateCartBadge=()=>{const b=document.querySelector('#cart-count');if(b)b.textContent=getCart().reduce((s,x)=>s+(x.qty||1),0)};
-const getShopCart=()=>{try{return JSON.parse(localStorage.getItem(SHOP_KEY)||'[]')}catch{return[]}};
+const getShopCart=()=>{try{const data=JSON.parse(localStorage.getItem(SHOP_KEY)||'[]');return Array.isArray(data)?data:[]}catch{return[]}};
 const setShopCart=cart=>{localStorage.setItem(SHOP_KEY,JSON.stringify(cart));updateShopBadge()};
 const updateShopBadge=()=>{const b=document.querySelector('#shop-count');if(b)b.textContent=getShopCart().reduce((s,x)=>s+(x.qty||1),0)};
 function addToShopCart(item){
@@ -77,6 +78,8 @@ function openCart(){
    qty.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();saveTypedQty();qty.blur()}});
    controls.append(minus,qty,plus); row.append(txt,controls);list.append(row);
  }
+ drawer.querySelector('.request-preview')?.remove();
+ drawer.querySelector('#cart-send').disabled=!cart.length;
  drawer.hidden=false; document.body.classList.add('cart-open');
 }
 function closeCart(){const d=document.querySelector('#cart-drawer');if(d)d.hidden=true;document.body.classList.remove('cart-open')}
@@ -84,13 +87,14 @@ function sendCartRequest(){
  const cart=getCart(); if(!cart.length)return;
  const lines=cart.map((x,i)=>(i+1)+'. '+x.name+' | код '+x.code+' | количество '+x.qty);
  const body=['Здравствуйте!','','Прошу подготовить коммерческие условия / счёт по позициям:','',...lines,'','Организация:','Контактное лицо:','Телефон:','Город:'].join('\n');
- location.href='mailto:info@dv-legion.ru?subject='+encodeURIComponent('B2B-заявка с сайта ДВ Легион')+'&body='+encodeURIComponent(body);
+ showRequestPreview(document.querySelector('#cart-drawer'),'B2B-заявка с сайта ДВ Легион',body);
 }
 
 function syncUrl(){
   const url=new URL(location.href);
   if(category.value) url.searchParams.set('category',category.value);
   else url.searchParams.delete('category');
+  if(search.value.trim())url.searchParams.set('q',search.value.trim());else url.searchParams.delete('q');
   history.replaceState(null,'',url);
 }
 
@@ -127,7 +131,7 @@ function render(){
 }
 
 for(const button of groupButtons){button.addEventListener('click',()=>{category.value=button.dataset.category;page=1;syncUrl();render();if(window.innerWidth<700)document.querySelector('.catalog-toolbar').scrollIntoView({behavior:'smooth',block:'start'});});}
-search.addEventListener('input',()=>{page=1;render()});
+search.addEventListener('input',()=>{page=1;syncUrl();render()});
 category.addEventListener('change',()=>{page=1;syncUrl();render()});
 reset.addEventListener('click',()=>{search.value='';category.value='';page=1;syncUrl();render();search.focus();});
 prev.addEventListener('click',()=>{page--;render();document.querySelector('.catalog-result-row').scrollIntoView({block:'start'});});
@@ -144,3 +148,5 @@ document.addEventListener('DOMContentLoaded',()=>{
  document.querySelector('#shop-close')?.addEventListener('click',closeShopCart);
  document.querySelector('#shop-checkout')?.addEventListener('click',()=>{if(getShopCart().length)location.href='checkout.html'});
 });
+
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeCart();closeShopCart();}});

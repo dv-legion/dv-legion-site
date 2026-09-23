@@ -26,8 +26,8 @@ if(partnerForm){
    const subject='Заявка на сотрудничество — '+v('company');
    const body=['Здравствуйте!','','Прошу связаться со мной по вопросу сотрудничества с ООО «ДВ Легион».','','Компания: '+v('company'),'Контактное лицо: '+v('name'),'Телефон: '+v('phone'),'Email: '+(v('email')||'—'),'Город: '+(v('city')||'—'),'','Комментарий:',v('message')||'—'].join('\n');
    const status=document.querySelector('#form-status');
-   if(status)status.textContent='Открываем письмо на info@dv-legion.ru…';
-   location.href='mailto:info@dv-legion.ru?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+   if(status)status.textContent='Текст заявки готов. Отправьте его из вашей почты.';
+   showRequestPreview(partnerForm,subject,body);
  });
 }
 
@@ -90,4 +90,18 @@ launch.addEventListener('click',()=>{
 closeBtn.addEventListener('click',()=>{panel.hidden=true;launch.setAttribute('aria-expanded','false')});
 form.addEventListener('submit',e=>{e.preventDefault();const q=input.value.trim();input.value='';answerConsultant(q)});
 bot.querySelector('.consultant-quick').addEventListener('click',e=>{const b=e.target.closest('button[data-q]');if(b)answerConsultant(b.dataset.q)});
-fetch('catalog-data.json').then(r=>r.ok?r.json():[]).then(d=>{if(Array.isArray(d))consultantItems=d}).catch(()=>{});
+let consultantLoaded=false;
+launch.addEventListener('click',()=>{if(consultantLoaded)return;consultantLoaded=true;fetch('catalog-data.json').then(r=>r.ok?r.json():[]).then(d=>{if(Array.isArray(d))consultantItems=d}).catch(()=>{consultantLoaded=false;});});
+
+// Prepare a message explicitly: never claim delivery without a mail service.
+function showRequestPreview(container,subject,body){
+ container.querySelector('.request-preview')?.remove();
+ const box=document.createElement('section');box.className='request-preview';
+ const note=document.createElement('p');note.textContent='Заявка подготовлена, но ещё не отправлена. Отправьте письмо на info@dv-legion.ru. Если почтовое приложение не настроено, скопируйте текст или сохраните файл.';
+ const area=document.createElement('textarea');area.readOnly=true;area.value=body;area.setAttribute('aria-label','Текст заявки');
+ const mail=document.createElement('a');mail.textContent='Открыть письмо';mail.href='mailto:info@dv-legion.ru?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+ const copy=document.createElement('button');copy.type='button';copy.textContent='Скопировать текст';
+ copy.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(area.value);copy.textContent='Скопировано';}catch{area.focus();area.select();copy.textContent='Текст выделен — нажмите Ctrl+C';}});
+ const save=document.createElement('button');save.type='button';save.textContent='Сохранить заявку';save.onclick=()=>{const u=URL.createObjectURL(new Blob([area.value],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=u;a.download='dv-legion-request.txt';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);};
+ box.append(note,area,mail,copy,save);container.append(box);area.focus();
+}
